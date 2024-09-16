@@ -224,17 +224,23 @@
                                 <div class="col-xl-10 col-lg-11 col-md-10 col-11">
                                     <h2 class="mb-15 small", id="set">Набор учащихся 
 									</h2>
-                                    <div class="f-22 color-heading text-adaptive">Нужны студенты для работы над JavaScript 
-									                                    <div class="f-22 color-heading text-adaptive">Нужны студенты для работы над JavaScript 
-										<div class="formsend border border-black border-4 mt-4"><form action="/submit" method="post">
-											<label class="form-label" for="name">Имя:</label>
+                                    <div class="f-22 color-heading text-adaptive">Нужны студенты для работы над JavaScript
+										<div class="formsend mt-4">
+
+
+											<form id="form_send">
+											<label class="" for="name">Имя:</label>
+											
 											<input class="form-control" type="text" id="name" name="name" required>
 										
 											<label for="phone">Номер телефона:</label>
 											<input class="form-control" type="tel" id="phone" name="phone" required>
 										
-											<button class="buttonsubmit btn btn-success" type="submit">Отправить</button>
-										</form></div>
+											<button class="rounded-pill mt-4 btn-secondary" onclick="sendData()" type="submit">Отправить</button>
+											</form>
+
+
+										</div>
         </section>
 		</section>
 <section class="pt-1 pb-1 bg-light content_1" id="id-contacts">
@@ -298,6 +304,7 @@
 		<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>	
 		<script src="js/jquery.maskedinput.min.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/sendform.js"></script>
 		<script>
 			function slowScroll (id) {
 				$('html,body').animate ({
